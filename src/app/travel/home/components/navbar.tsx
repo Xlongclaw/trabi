@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { MobileNav } from './mobile-nav';
-import { Container } from '@/components/layout/container';
-import { Button, Typography } from '@/components/ui';
+import Link from "next/link";
+import { MobileNav } from "./mobile-nav";
+import { Container } from "@/components/layout/container";
+import { Button, Typography } from "@/components/ui";
 
 export interface NavbarNavItem {
   label: string;
@@ -43,7 +43,7 @@ export function Navbar({
   return (
     <header
       className={`sticky top-0 z-50 border-b border-theme-border bg-theme-white backdrop-blur-x ${
-        className ?? ''
+        className ?? ""
       }`}
     >
       <Container>
@@ -93,7 +93,15 @@ export function Navbar({
               </Button>
             )}
 
-            {showMobileNav && <MobileNav />}
+            {showMobileNav && (
+              <MobileNav
+                navigation={navigation}
+                login={login}
+                cta={cta}
+                showLogin={showLogin}
+                showCta={showCta}
+              />
+            )}
           </div>
         </div>
       </Container>
