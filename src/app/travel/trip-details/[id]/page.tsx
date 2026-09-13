@@ -198,7 +198,7 @@ export default function TripDetailsPage() {
 
   return (
     <main className="min-h-screen bg-[#fafaf7] text-slate-950">
-      <div className="mx-auto max-w-[1400px] px-5 pb-20 pt-6 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-[1400px]  pb-20 pt-6 ">
         <Container>
           {/* Breadcrumb */}
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-500">
