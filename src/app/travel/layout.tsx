@@ -10,7 +10,7 @@ export default function DecoratedLayout({
 }>) {
   return (
     <>
-      <Navbar
+      {/* <Navbar
         logo={
           <div className="flex items-center">
             <div className="border-2 rounded-full">
@@ -18,7 +18,6 @@ export default function DecoratedLayout({
             </div>
             <div className="ml-2">
               <div className="text-lg  font-semibold "> Trabi.</div>
-              {/* <div className="text-[8px] font-semibold -mt-1 pl-0.5 text-black/59">@ Barket</div> */}
             </div>
           </div>
         }
@@ -27,7 +26,6 @@ export default function DecoratedLayout({
           { label: 'Trips', href: '/travel/search' },
           { label: 'Agencies', href: '/travel/travel-agencies' },
           { label: 'Host a trip', href: '/travel/host-a-trip' },
-          // { label: 'About', href: '/about' },
         ]}
         login={{ label: 'Log in', href: '/login' }}
         cta={{
@@ -35,7 +33,7 @@ export default function DecoratedLayout({
           href: '/register',
           icon: <Handshake className="mr-1 size-4 text-theme-lime" strokeWidth={3} />,
         }}
-      />
+      /> */}
       {children}
       <WhatsappBtn />
       {/* <Footer /> */}

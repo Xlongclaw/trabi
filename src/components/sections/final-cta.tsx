@@ -65,7 +65,7 @@ export function FinalCTA({
           <Typography
             variant="display"
             as="h2"
-            className={cn('mx-auto max-w-4xl uppercase text-[#071006]')}
+            className={cn('mx-auto max-w-4xl uppercase text-[#071006] font-oswald')}
           >
             {title}
           </Typography>
@@ -73,7 +73,7 @@ export function FinalCTA({
           <Typography
             variant="h2"
             as="h2"
-            className={cn('mx-auto max-w-4xl uppercase text-[#071006]')}
+            className={cn('mx-auto max-w-4xl uppercase text-[#071006] font-oswald')}
           >
             {title}
           </Typography>

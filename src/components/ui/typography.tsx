@@ -33,7 +33,7 @@ const variantStyles: Record<TypographyVariant, string> = {
 
   h4: 'text-lg sm:text-xl font-semibold tracking-[-0.025em] leading-[1.2]',
 
-  'body-lg': 'sm:text-lg/8 text-lg/7 text-foreground/70',
+  'body-lg': 'md:text-lg/8 sm:text-lg/7 text-base/6 text-foreground/70',
 
   body: 'text-base leading-7 text-foreground/70',
 

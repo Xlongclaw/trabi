@@ -248,7 +248,7 @@ export default function TravelAgencies() {
                   Handpicked for you
                 </p>
 
-                <h2 className="text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">
+                <h2 className="text-4xl font-semibold tracking-[-0.045em] sm:text-5xl font-oswald">
                   Trusted <span className="text-lime-600 italic">agencies</span>
                 </h2>
               </div>
