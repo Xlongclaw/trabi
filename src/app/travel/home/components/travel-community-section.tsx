@@ -141,6 +141,7 @@ export function TravelCommunitySection({
                 md:text-6xl
                 lg:text-[64px]
                 xl:text-[78px]
+                font-oswald
               "
             >
               {title ?? (

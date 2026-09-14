@@ -1,5 +1,6 @@
 'use client';
 
+import { Container } from '@/components/layout';
 import {
   ArrowRight,
   BadgeCheck,
@@ -189,64 +190,13 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
 
   return (
     <div className="min-h-screen bg-[#fbfcf9] text-[#111111]">
-      {/* ================================================================
-          NAVBAR
-      ================================================================= */}
-      <header className="border-b border-black/[0.06] bg-[#fbfcf9]">
-        <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-10">
-          <a href="/" className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#b8f45a]">
-              <span className="text-sm font-black">B</span>
-            </div>
+      <Container>
 
-            <span className="text-xl font-semibold tracking-[-0.03em]">Bracket.</span>
-          </a>
-
-          <nav className="hidden items-center gap-8 md:flex">
-            <a
-              href="/destinations"
-              className="text-sm font-medium text-black/50 transition hover:text-black"
-            >
-              Destinations
-            </a>
-
-            <a
-              href="/trips"
-              className="text-sm font-medium text-black/50 transition hover:text-black"
-            >
-              Trips
-            </a>
-
-            <a
-              href="/travel-agencies"
-              className="text-sm font-medium text-black/50 transition hover:text-black"
-            >
-              Travel agencies
-            </a>
-
-            <a
-              href="/about"
-              className="text-sm font-medium text-black/50 transition hover:text-black"
-            >
-              About
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <button className="hidden text-sm font-semibold sm:block">Log in</button>
-
-            <button className="flex items-center gap-2 rounded-full bg-[#111111] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-black/80">
-              Join us
-              <ArrowRight className="h-4 w-4" />
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* ================================================================
           AGENCY HEADER
       ================================================================= */}
-      <section className="px-5 pt-6 sm:px-8 lg:px-10">
+      <section className="pt-6">
         <div className="mx-auto max-w-[1400px]">
           {/* Breadcrumb */}
           <div className="mb-6 flex items-center gap-2 text-xs text-black/40">
@@ -338,7 +288,7 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
       {/* ================================================================
           PACKAGES
       ================================================================= */}
-      <section className="px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
+      <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-[1400px]">
           {/* Heading */}
           <div className="flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
@@ -586,7 +536,7 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
       {/* ================================================================
           ABOUT AGENCY
       ================================================================= */}
-      <section className="border-y border-black/[0.06] bg-white px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
+      <section className="border-y border-black/[0.06] bg-white py-20  lg:py-28">
         <div className="mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
           <div>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-black/40">
@@ -649,7 +599,7 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
       {/* ================================================================
           CTA
       ================================================================= */}
-      <section className="px-5 py-12 sm:px-8 lg:px-10 lg:py-16">
+      <section className=" py-12 lg:py-16">
         <div className="mx-auto max-w-[1400px] rounded-[36px] bg-[#b8f45a] px-7 py-14 sm:px-12 lg:px-16 lg:py-20">
           <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
             <div>
@@ -682,7 +632,7 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
       {/* ================================================================
           FOOTER
       ================================================================= */}
-      <footer className="px-5 pb-8 pt-4 sm:px-8 lg:px-10">
+      <footer className=" pb-8 pt-4 ">
         <div className="mx-auto flex max-w-[1400px] flex-col justify-between gap-6 border-t border-black/[0.08] pt-8 sm:flex-row sm:items-center">
           <div className="flex items-center gap-2.5">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#b8f45a]">
@@ -709,6 +659,7 @@ export default function AgencyPackagesPage({ agencySlug }: AgencyPackagesPagePro
           </div>
         </div>
       </footer>
+      </Container>
     </div>
   );
 }
