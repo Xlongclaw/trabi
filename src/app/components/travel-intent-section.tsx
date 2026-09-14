@@ -16,7 +16,7 @@ import { EntryAnimation } from "@/components/ui/entry-animation";
 import ti1 from "./home-travel-intent/images/ti1.jpg";
 import ti2 from "./home-travel-intent/images/ti2.jpg";
 import ti3 from "./home-travel-intent/images/ti3.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export interface TravelIntentCard {
   eyebrow: string;
@@ -24,7 +24,7 @@ export interface TravelIntentCard {
   description: string;
   ctaLabel: string;
   href: string;
-  image: string;
+  image: string | StaticImageData;
   icon?: ReactNode;
 }
 
